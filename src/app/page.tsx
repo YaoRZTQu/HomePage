@@ -29,24 +29,24 @@ export default function Home() {
           <div className="mt-9 flex flex-wrap justify-center gap-3">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+              className="glass-button inline-flex items-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background hover:opacity-95"
             >
               查看项目
               <ArrowRight className="size-4" />
             </Link>
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background/70 px-4 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-soft"
+              className="glass-button inline-flex items-center gap-2 rounded-md border border-border bg-surface/70 px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-soft"
             >
               阅读文章
             </Link>
           </div>
 
-          <div className="mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-2 rounded-lg border border-border bg-surface/78 p-2 shadow-sm shadow-black/5 backdrop-blur">
+          <div className="glass-panel mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-2 rounded-lg p-2">
             {signals.map((item) => {
               const Icon = item.icon;
               return (
-                <div key={item.label} className="flex min-h-24 flex-col items-center justify-center gap-3 rounded-md bg-background/55 px-2">
+                <div key={item.label} className="glass-card flex min-h-24 flex-col items-center justify-center gap-3 rounded-md bg-background/55 px-2">
                   <Icon className="size-5 text-accent" />
                   <span className="text-[13px] font-medium text-muted">{item.label}</span>
                 </div>

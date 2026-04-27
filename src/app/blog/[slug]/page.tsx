@@ -51,7 +51,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
 
   return (
     <Container className="py-12 sm:py-16">
-      <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
+      <Link href="/blog" className="glass-button inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-semibold text-accent">
         <ArrowLeft className="size-4" />
         返回博客
       </Link>
@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }: PageProps<"/blog/[slug]">
           {post.tags.length > 0 ? (
             <div className="mt-6 flex flex-wrap gap-2">
               {post.tags.map((tag) => (
-                <span key={tag} className="rounded-md border border-border px-3 py-1 text-xs font-medium text-muted">
+                <span key={tag} className="glass-button rounded-md border border-border px-3 py-1 text-xs font-medium text-muted">
                   {tag}
                 </span>
               ))}

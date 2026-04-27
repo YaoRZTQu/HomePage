@@ -13,7 +13,7 @@ const dateFormatter = new Intl.DateTimeFormat("zh-CN", {
 
 export function PostCard({ post }: PostCardProps) {
   return (
-    <article className="group border-b border-border py-6 last:border-b-0">
+    <article className="glass-card group rounded-lg border border-transparent px-3 py-6 last:border-b-0 sm:px-4">
       <div className="mb-2 flex flex-wrap items-center gap-2 text-[13px] text-muted">
         <time dateTime={post.date}>{dateFormatter.format(new Date(post.date))}</time>
         <span aria-hidden="true">/</span>
@@ -28,7 +28,7 @@ export function PostCard({ post }: PostCardProps) {
       {post.tags.length > 0 ? (
         <div className="mt-3 flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <span key={tag} className="rounded-md border border-border px-2 py-1 text-xs font-medium text-muted">
+            <span key={tag} className="glass-button rounded-md border border-border px-2 py-1 text-xs font-medium text-muted">
               {tag}
             </span>
           ))}

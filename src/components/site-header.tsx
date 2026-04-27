@@ -13,7 +13,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-transparent pt-3">
       <Container className="px-3 sm:px-6 lg:px-8">
-        <div className="flex h-[52px] items-center justify-between gap-3 rounded-lg border border-border/80 bg-surface/88 px-3 shadow-sm shadow-black/5 backdrop-blur-xl sm:px-4">
+        <div className="glass-panel flex h-[52px] items-center justify-between gap-3 rounded-lg px-3 sm:px-4">
           <Link href="/" className="text-sm font-semibold text-foreground">
             Timeload
           </Link>
@@ -22,7 +22,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-md px-2 py-1.5 transition-colors hover:bg-soft hover:text-foreground sm:px-3"
+                className="glass-button rounded-md px-2 py-1.5 transition-colors hover:bg-soft hover:text-foreground sm:px-3"
               >
                 {item.label}
               </Link>
@@ -32,14 +32,14 @@ export function SiteHeader() {
             <a
               href="https://github.com/"
               aria-label="Code profile"
-              className="rounded-md p-2 text-muted transition-colors hover:bg-soft hover:text-foreground"
+              className="glass-button rounded-md p-2 text-muted transition-colors hover:bg-soft hover:text-foreground"
             >
               <Code2 className="size-4" />
             </a>
             <a
               href="mailto:hello@example.com"
               aria-label="Email"
-              className="rounded-md p-2 text-muted transition-colors hover:bg-soft hover:text-foreground"
+              className="glass-button rounded-md p-2 text-muted transition-colors hover:bg-soft hover:text-foreground"
             >
               <Mail className="size-4" />
             </a>

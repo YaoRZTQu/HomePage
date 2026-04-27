@@ -21,7 +21,7 @@ export default function BlogPage() {
         {tags.length > 0 ? (
           <div className="mt-6 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span key={tag} className="rounded-md border border-border px-3 py-1 text-xs font-medium text-muted">
+              <span key={tag} className="glass-button rounded-md border border-border px-3 py-1 text-xs font-medium text-muted">
                 {tag}
               </span>
             ))}

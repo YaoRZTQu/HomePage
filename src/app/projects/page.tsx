@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       </header>
       <section className="mt-10 grid gap-5 md:grid-cols-3">
         {projects.map((project) => (
-          <article key={project.name} className="rounded-lg border border-border bg-background/70 p-6">
+          <article key={project.name} className="glass-card rounded-lg border border-border bg-surface/70 p-6">
             <div className="flex items-start justify-between gap-4">
               <h2 className="text-xl font-semibold">{project.name}</h2>
               <ExternalLink className="mt-1 size-4 text-muted" />
